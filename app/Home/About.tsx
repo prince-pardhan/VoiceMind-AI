@@ -19,14 +19,14 @@ export default function Page() {
         }}
       >
         <Title c="#2301ff"
-        fw={900}
+          fw={900}
           order={1}
           style={{
             background: "linear-gradient(90deg,#667eea,#764ba2)",
             WebkitBackgroundClip: "text",
           }}
         >
-          VoiceMind AI 
+          VoiceMind AI
         </Title>
 
         <Group gap={10}></Group>
@@ -158,7 +158,7 @@ export default function Page() {
         }}
       >
         <Box maw={900}>
-          <Title mb={30} bg="blue" fw={900}>
+          <Title mb={30} fw={900}>
             About VoiceMind AI =
           </Title>
 
@@ -196,25 +196,25 @@ export default function Page() {
 
         <Text maw={900} mb={30} fw={400}>
           Experience the next generation AI voice assistant and automate your digital life effortlessly.
-Control your apps, devices, and workflows using simple voice commands.
-VoiceMind AI understands natural language just like a human assistant.
-Perform daily tasks faster without touching your keyboard or screen.
-From sending messages to managing schedules, everything becomes easier.
-Advanced AI ensures accurate and lightning-fast speech recognition.
-Turn complex commands into simple spoken instructions.
-Save time and boost productivity with intelligent automation.
-VoiceMind AI adapts to your habits and learns from your usage.
-Enjoy seamless interaction across different platforms and devices.
-Speak naturally and let the AI handle the rest.
-Whether you are working, studying, or relaxing, your assistant is always ready.
-Get instant responses and complete tasks in seconds.
-Experience smooth and reliable voice-powered technology.
-Break language barriers with multi-language understanding.
-Your voice data stays secure and protected with strong encryption.
-Designed to make technology more human and accessible.
-Simplify your digital life with smart voice interactions.
-Work smarter with AI that listens and understands.
-VoiceMind AI brings the future of voice automation to your fingertips....?
+          Control your apps, devices, and workflows using simple voice commands.
+          VoiceMind AI understands natural language just like a human assistant.
+          Perform daily tasks faster without touching your keyboard or screen.
+          From sending messages to managing schedules, everything becomes easier.
+          Advanced AI ensures accurate and lightning-fast speech recognition.
+          Turn complex commands into simple spoken instructions.
+          Save time and boost productivity with intelligent automation.
+          VoiceMind AI adapts to your habits and learns from your usage.
+          Enjoy seamless interaction across different platforms and devices.
+          Speak naturally and let the AI handle the rest.
+          Whether you are working, studying, or relaxing, your assistant is always ready.
+          Get instant responses and complete tasks in seconds.
+          Experience smooth and reliable voice-powered technology.
+          Break language barriers with multi-language understanding.
+          Your voice data stays secure and protected with strong encryption.
+          Designed to make technology more human and accessible.
+          Simplify your digital life with smart voice interactions.
+          Work smarter with AI that listens and understands.
+          VoiceMind AI brings the future of voice automation to your fingertips....?
 
         </Text>
       </Flex>

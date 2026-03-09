@@ -19,9 +19,16 @@ export const metadata: Metadata = {
   title: "voicemind-ai",
   description: "Real-time Voice Recognition Smart AI Responses Smart AI Responses Web-based Voice Assistant Secure & User-Friendly Interface",
    icons: {
-    icon: "/ai.png",
-    shortcut: "/aipng",
-    apple: "/ai.png",
+    icon: [
+      {
+        rel: "icon",
+        url: "/ai.png",
+      },
+      {
+        rel: "apple-touch-icon",
+        url: "/ai.png",
+      },
+    ],
   },
 };
 
