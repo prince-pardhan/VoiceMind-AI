@@ -4,7 +4,7 @@ import { Box, Flex, Button, Text, Title, Group, Grid, Card, Image } from "@manti
 
 export default function Page() {
   return (
-    <Box style={{ width: "100%", minHeight: "100vh", background: "#1100ff" }}>
+    <Box style={{ width: "100%", minHeight: "100vh", background: "rgb(0, 0, 0)" }}>
 
       {/* Navbar */}
       <Flex
@@ -79,7 +79,7 @@ export default function Page() {
       </Flex>
 
       {/* Features */}
-      <Box py={100} px={{ base: 20, md: 60 }} bg="#001aff">
+      <Box py={100} px={{ base: 20, md: 60 }} bg="#000000">
         <Grid>
           {[
             {
@@ -114,12 +114,12 @@ export default function Page() {
                 padding="xl"
                 style={{
                   textAlign: "center",
-                  background: "rgba(0, 0, 0, 0.1)",
+                  background: "rgb(0, 8, 255)",
                   backdropFilter: "blur(10px)",
                   color: "white",
                   transition: "all 0.9s ease",
                   cursor: "pointer",
-                  border: "1px solid rgba(0, 0, 0, 0.2)",
+                  border: "1px solid rgba(13, 0, 255, 0.99)",
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.transform = "translateY(-38px)";
