@@ -4,7 +4,7 @@ import { Box, Flex, Button, Text, Title, Group, Grid, Card, Image } from "@manti
 
 export default function Page() {
   return (
-    <Box style={{ width: "100%", minHeight: "100vh", background: "rgb(0, 0, 0)" }}>
+    <Box style={{ width: "100%", minHeight: "100vh" }}>
 
       {/* Navbar */}
       <Flex
@@ -18,7 +18,8 @@ export default function Page() {
           boxShadow: "0 6px 25px rgba(0,0,0,0.08)",
         }}
       >
-        <Title c="#2301ff"
+        <Title
+          c="black"
           fw={900}
           order={1}
           style={{
@@ -44,9 +45,11 @@ export default function Page() {
         style={{
           minHeight: "90vh",
           textAlign: "center",
-          padding: "20px",
-          background: "linear-gradient(120deg,#667eea,#764ba2,#6dd5ed)",
-          color: "white",
+          padding: "40px 20px",
+          background:
+            "linear-gradient(135deg,#4facfe 0%,#00f2fe 25%,#7367f0 50%,#ff9a9e 75%,#fad0c4 100%)",
+          position: "relative",
+          overflow: "hidden",
         }}
       >
         <Image
@@ -59,52 +62,57 @@ export default function Page() {
         <Title
           order={1}
           mb={20}
+          c="white"
           style={{
             fontSize: "clamp(32px,6vw,52px)",
             fontWeight: 800,
           }}
         >
-          The Future of Voice Technology,<br />
+          The Future of Voice Technology
         </Title>
 
-        <Text maw={900} size="lg" mb={10} c="#ffffff" fw={900}>
-          (((  VoiceMind AI is an intelligent voice assistant powered by advanced AI.
+        <Text maw={900} size="lg" mb={10} c="black" fw={900}>
+          VoiceMind AI is an intelligent voice assistant powered by advanced AI.
           Convert speech to text, automate tasks, and control applications
-          using powerful voice commands.......?  )))
+          using powerful voice commands....?
         </Text>
 
-        <Text mb={10} style={{ fontSize: "clamp(28px,5vw,45px)", fontWeight: 900 }}>
-          Powerful AI Features,
+        <Text
+          mb={10}
+          c="black"
+          style={{ fontSize: "clamp(28px,5vw,45px)", fontWeight: 900 }}
+        >
+          Powerful AI Features
         </Text>
       </Flex>
 
       {/* Features */}
-      <Box py={100} px={{ base: 20, md: 60 }} bg="#000000">
+      <Box py={{ base: 60, md: 100 }} px={{ base: 20, md: 60 }}>
         <Grid>
           {[
             {
               title: "Voice Commands",
-              desc: "Control apps and devices using natural voice commands. Simply speak and let AI handle tasks quickly and efficiently. VoiceMind AI understands your intent and responds instantly. It makes interacting with technology faster and more natural. Experience a smarter, hands-free way to manage your digital world.....?",
+              desc: "Control apps and devices using natural voice commands. Simply speak and let AI handle tasks quickly and efficiently.....?",
             },
             {
               title: "Speech to Text",
-              desc: "Convert your speech into accurate text instantly. Speak naturally and watch your words appear on the screen in real time. Our advanced AI ensures high accuracy and fast processing. Perfect for notes, messages, and productivity tasks.Save time and communicate more efficiently with voice.....?",
+              desc: "Convert your speech into accurate text instantly. Speak naturally and watch your words appear on the screen.....?",
             },
             {
               title: "Smart Automation",
-              desc: "Automate tasks and improve productivity. Let AI handle repetitive work while you focus on what matters most. Simplify your workflow with smart voice commands and automation. Save time and complete tasks faster with intelligent assistance. Work smarter and boost your efficiency every day.....?",
+              desc: "Automate tasks and improve productivity. Let AI handle repetitive work while you focus on what matters most.....?",
             },
             {
               title: "Multi Language",
-              desc: "Speak different languages and AI understands. Communicate naturally without worrying about language barriers. Our AI can recognize and process multiple languages instantly. It helps you connect, work, and create with people worldwide. Experience seamless multilingual interaction powered by smart AI.....?",
+              desc: "Speak different languages and AI understands. Communicate naturally without worrying about language barriers.....?",
             },
             {
               title: "Fast AI Processing",
-              desc: "Lightning fast speech recognition system. Instantly converts your voice into actions and text in real time Advanced AI ensures quick response with high accuracy. Enjoy smooth, lag-free interaction with your devices. Experience the speed and power of next-generation voice technology.....?",
+              desc: "Lightning fast speech recognition system. Instantly converts your voice into actions and text.....?",
             },
             {
               title: "Secure & Private",
-              desc: "Your voice data stays protected and encrypted. Advanced security ensures your conversations remain private. All voice interactions are processed with strong data protection. We prioritize user privacy and secure data handling. Use voice technology with complete confidence and trust.......?",
+              desc: "Your voice data stays protected and encrypted with advanced security.....?",
             },
           ].map((feature, i) => (
             <Grid.Col span={{ base: 12, sm: 6, md: 4 }} key={i}>
@@ -114,29 +122,30 @@ export default function Page() {
                 padding="xl"
                 style={{
                   textAlign: "center",
-                  background: "rgb(0, 8, 255)",
-                  backdropFilter: "blur(10px)",
+                  background: "linear-gradient(135deg,#ff9a9e,#fad0c4,#fbc2eb,#a6c1ee)",
                   color: "white",
-                  transition: "all 0.9s ease",
+                  border: "1px solid rgba(255,255,255,0.4)",
+                  backdropFilter: "blur(10px)",
+                  transition: "all 0.6s ease",
                   cursor: "pointer",
-                  border: "1px solid rgba(13, 0, 255, 0.99)",
                 }}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = "translateY(-38px)";
-                  e.currentTarget.style.boxShadow = "0 25px 50px rgb(0, 0, 0)";
+                  e.currentTarget.style.transform = "translateY(-20px) scale(1.03)";
+                  e.currentTarget.style.boxShadow =
+                    "0 30px 60px rgba(0,0,0,0.35)";
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = "translateY(0)";
+                  e.currentTarget.style.transform = "translateY(0) scale(1)";
                   e.currentTarget.style.boxShadow = "";
                 }}
               >
-                <Image width={60} mx="auto" mb={17} />
+                <Image width={70} mx="auto" mb={17} />
 
-                <Title order={4} mb={10} c="white" fw={900}>
+                <Title order={4} mb={10} c="black" fw={900}>
                   {feature.title}
                 </Title>
 
-                <Text c="white" fw={200}>
+                <Text c="black" fw={400}>
                   {feature.desc}
                 </Text>
               </Card>
@@ -149,20 +158,20 @@ export default function Page() {
       <Flex
         justify="center"
         align="center"
-        gap={80}
+        gap={{ base: 40, md: 80 }}
         px={{ base: 20, md: 60 }}
-        py={100}
+        py={{ base: 60, md: 100 }}
         wrap="wrap"
         style={{
-          background: "linear-gradient(120deg,#eef2ff,#f9fafc)",
+          background: "linear-gradient(135deg,#e0e7ff,#f3e8ff,#e0f7fa,#fdf2f8)",
         }}
       >
         <Box maw={900}>
-          <Title mb={30} fw={900}>
-            About VoiceMind AI =
+          <Title mb={30} fw={900} c="black" bg="blue">
+             VoiceMind AI =
           </Title>
 
-          <Text c="black" fw={900}>
+          <Text c="black" fw={500} bg="blue">
             VoiceMind AI transforms the way people interact with technology.
             Using advanced machine learning and natural language processing,
             it allows users to perform tasks simply by speaking.......?
@@ -184,17 +193,21 @@ export default function Page() {
         direction="column"
         align="center"
         justify="center"
-        py={100}
+        py={{ base: 60, md: 100 }}
         px={{ base: 20, md: 60 }}
         style={{
-          background: "linear-gradient(120deg,#667eea,#764ba2)",
-          color: "white",
+          background:
+            "linear-gradient(135deg,#667eea 0%,#764ba2 30%,#6dd5ed 60%,#a18cd1 100%)",
           textAlign: "center",
+          position: "relative",
+          overflow: "hidden",
         }}
       >
-        <Title mb={20} fw={900}>``Start Using VoiceMind AI Today,,</Title>
+        <Title mb={40} fw={900} c="black" >
+          Start Using VoiceMind AI Today =
+        </Title>
 
-        <Text maw={900} mb={30} fw={400}>
+        <Text maw={900} mb={30} fw={700} c="white">
           Experience the next generation AI voice assistant and automate your digital life effortlessly.
           Control your apps, devices, and workflows using simple voice commands.
           VoiceMind AI understands natural language just like a human assistant.
@@ -214,8 +227,7 @@ export default function Page() {
           Designed to make technology more human and accessible.
           Simplify your digital life with smart voice interactions.
           Work smarter with AI that listens and understands.
-          VoiceMind AI brings the future of voice automation to your fingertips....?
-
+          VoiceMind AI brings the future of voice automation to your fingertips......?
         </Text>
       </Flex>
     </Box>
