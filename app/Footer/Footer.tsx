@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Flex, Text, Title, Grid } from "@mantine/core";
+import { Box, Flex, Text, Title, Grid, Divider, Stack } from "@mantine/core";
 
 export default function Page() {
   return (
@@ -27,6 +27,7 @@ export default function Page() {
             }}
           >
             VoiceMind AI
+            <Divider mb={10} fw={900} />
           </Title>
 
           <Text size="sm" c="gray.4">
@@ -34,6 +35,7 @@ export default function Page() {
             control applications, automate tasks, and convert speech
             into accurate text using advanced artificial intelligence.
           </Text>
+            <Divider mb={10} />
         </Grid.Col>
 
         {/* Company */}
@@ -47,29 +49,67 @@ export default function Page() {
 
         {/* Social */}
         <Grid.Col span={{ base: 6, sm: 3, md: 2 }}>
-          <Title order={6} mb={10} style={{gap:"20px"}}>Follow</Title>
+          <Title order={6} mb={5} fw={900} c="blue">Follow</Title>
+          <Divider mb={10} />
 
-          <Text size="sm" style={{ cursor: "pointer" ,gap:"20px"}}> <a href="https://x.com/Rkswami001">Twitter</a></Text> 
-          <Text size="sm" style={{ cursor: "pointer" }}> <a href="https://www.linkedin.com/in/rk-swami-b63251379/">LinkedIn</a></Text>
-          <Text size="sm" style={{ cursor: "pointer" }}>  <a href="https://github.com/prince-pardhan">GitHub</a> </Text>
-          <Text size="sm" style={{ cursor: "pointer" }}> <a href="https://www.youtube.com/@RkWriter001">YouTube</a> </Text>
+          <Stack gap={8}>
+            <Text size="sm">
+              <a href="https://x.com/Rkswami001" target="_blank">Twitter</a>
+            </Text>
+
+            <Text size="sm">
+              <a href="https://www.linkedin.com/in/rk-swami-b63251379/" target="_blank">LinkedIn</a>
+            </Text>
+
+            <Text size="sm">
+              <a href="https://github.com/prince-pardhan" target="_blank">GitHub</a>
+            </Text>
+
+            <Text size="sm">
+              <a href="https://www.youtube.com/@RkWriter001" target="_blank">YouTube</a>
+            </Text>
+          </Stack>
+
+
+        </Grid.Col>
+        <Grid.Col span={{ base: 6, sm: 3, md: 2 }}>
+          <Title order={6} mb={5} fw={900} c="blue">Contact</Title>
+          <Divider mb={10} />
+
+          <Stack gap={8}>
+            <Text size="sm">
+              <a href="https://wa.me/918290400325" target="_blank">
+                WhatsApp
+              </a>
+            </Text>
+            <Text size="sm">
+              <a href="https://wa.me/917450800010" target="_blank">
+                WhatsApp=2
+              </a>
+            </Text>
+            <Text size="lg">
+              <a href="tel:+918290400325">Call</a>
+            </Text>
+          </Stack>
+
 
         </Grid.Col>
 
       </Grid>
-
+  <Divider mb={10} />
       {/* Bottom */}
       <Flex
         justify="center"
         align="center"
         mt={40}
         style={{
-          borderTop: "1px solid rgba(255,255,255,0.1)",
+          borderTop: "3px solid rgba(255,255,255,0.1)",
           paddingTop: "20px",
         }}
       >
         <Text size="sm" c="gray.5">
-          © 2026 VoiceMind AI • All rights reserved
+          © 2026 VoiceMind AI •••• 
+          <Divider mb={10} />
         </Text>
       </Flex>
     </Box>

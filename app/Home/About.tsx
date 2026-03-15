@@ -171,10 +171,13 @@ export default function Page() {
              VoiceMind AI =
           </Title>
 
-          <Text c="black" fw={500} bg="blue">
+          <Text c="black" fw={500} bg="red">
             VoiceMind AI transforms the way people interact with technology.
             Using advanced machine learning and natural language processing,
             it allows users to perform tasks simply by speaking.......?
+          </Text> <br />
+          <Text c="black" fw={900} bg="green">
+          Ai jis ke bara me shirf logo ne suna tha ab ve es ka use kar sakta t ye hi h futchar ((((VoiceMind AI))))  .......?
           </Text>
         </Box>
 
@@ -207,7 +210,7 @@ export default function Page() {
           Start Using VoiceMind AI Today =
         </Title>
 
-        <Text maw={900} mb={30} fw={700} c="white">
+        <Text maw={900} mb={30} fw={900} c="white">
           Experience the next generation AI voice assistant and automate your digital life effortlessly.
           Control your apps, devices, and workflows using simple voice commands.
           VoiceMind AI understands natural language just like a human assistant.
@@ -229,6 +232,9 @@ export default function Page() {
           Work smarter with AI that listens and understands.
           VoiceMind AI brings the future of voice automation to your fingertips......?
         </Text>
+         <Title mb={40} fw={900} c="blue" >
+          Thanks,
+        </Title>
       </Flex>
     </Box>
   );
