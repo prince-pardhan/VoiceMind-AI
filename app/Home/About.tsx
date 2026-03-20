@@ -1,8 +1,16 @@
 "use client";
 
-import { Box, Flex, Button, Text, Title, Group, Grid, Card, Image } from "@mantine/core";
-
+import { Box, Flex, Button, Text, Title, Group, Grid, Card, Image, Modal, TextInput, PasswordInput } from "@mantine/core";
+import { useDisclosure } from "@mantine/hooks";
+// import SignupButton from "../singup/page";
+import { useEffect } from "react";
 export default function Page() {
+  const [opened, { open, close }] = useDisclosure(false);
+
+  // ✅ Page load hote hi popup open hoga
+  useEffect(() => {
+    open();
+  }, []);
   return (
     <Box style={{ width: "100%", minHeight: "100vh" }}>
 
@@ -27,14 +35,38 @@ export default function Page() {
             WebkitBackgroundClip: "text",
           }}
         >
-          VoiceMind AI
+          VoiceMind-AI
         </Title>
 
         <Group gap={10}></Group>
 
-        <Button radius="xl" style={{ background: "red" }}>
+        <Button radius="xl" style={{ background: "#002fff" }}>
           Download
         </Button>
+        {/* <Group  >
+          <SignupButton />
+        </Group> */}
+        {/* ///////////////////////////{{{  wele come model  }}}////////////////////////////////////////////////// */}
+        <Modal
+          opened={opened}
+          onClose={close}
+          centered
+          radius="15px"
+          fw={900}
+        >
+          <Title order={3} mb={10} c="blue" fw={900} >
+            Welcome to VoiceMind-AI
+          </Title>
+
+          <Text mb={20} fw={800}>
+            Welcome to the future of voice technology. Now, you can control everything with your voice.
+          </Text>
+
+          {/* <Group  >
+            <SignupButton />
+          </Group> */}
+        </Modal>
+        {/* ///////////////////////////{{{  wele come model  }}}////////////////////////////////////////////////// */}
       </Flex>
 
       {/* Hero */}
@@ -168,7 +200,7 @@ export default function Page() {
       >
         <Box maw={900}>
           <Title mb={30} fw={900} c="black" bg="blue">
-             VoiceMind AI =
+            VoiceMind AI =
           </Title>
 
           <Text c="black" fw={500} bg="red">
@@ -177,7 +209,7 @@ export default function Page() {
             it allows users to perform tasks simply by speaking.......?
           </Text> <br />
           <Text c="black" fw={900} bg="green">
-          Ai jis ke bara me shirf logo ne suna tha ab ve es ka use kar sakta t ye hi h futchar ((((VoiceMind AI))))  .......?
+            Ai jis ke bara me shirf logo ne suna tha ab ve es ka use kar sakta t ye hi h futchar ((((VoiceMind AI))))  .......?
           </Text>
         </Box>
 
@@ -232,7 +264,7 @@ export default function Page() {
           Work smarter with AI that listens and understands.
           VoiceMind AI brings the future of voice automation to your fingertips......?
         </Text>
-         <Title mb={40} fw={900} c="blue" >
+        <Title mb={40} fw={900} c="blue" >
           Thanks,
         </Title>
       </Flex>

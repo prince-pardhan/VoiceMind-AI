@@ -1,7 +1,7 @@
 "use client";
 
-import { Box, Flex, Text, Title, Grid, Divider, Stack } from "@mantine/core";
-
+import { Box, Flex, Text, Title, Grid, Divider, Stack, Group } from "@mantine/core";
+import SignupButton from "../singup/page";
 export default function Page() {
   return (
     <Box
@@ -35,7 +35,7 @@ export default function Page() {
             control applications, automate tasks, and convert speech
             into accurate text using advanced artificial intelligence.
           </Text>
-            <Divider mb={10} />
+          <Divider mb={10} />
         </Grid.Col>
 
         {/* Company */}
@@ -90,28 +90,35 @@ export default function Page() {
             <Text size="lg">
               <a href="tel:+918290400325">Call</a>
             </Text>
+
           </Stack>
 
 
         </Grid.Col>
 
-      </Grid>
-  <Divider mb={10} />
+      </Grid><br />
+      <Divider mb={10} />
+
+      {/* <Group  >
+        <SignupButton />
+      </Group> */}
+
       {/* Bottom */}
       <Flex
         justify="center"
         align="center"
-        mt={40}
+        mt={30}
         style={{
           borderTop: "3px solid rgba(255,255,255,0.1)",
           paddingTop: "20px",
         }}
       >
         <Text size="sm" c="gray.5">
-          © 2026 VoiceMind AI •••• 
+          © 2026 VoiceMind-AI
           <Divider mb={10} />
         </Text>
       </Flex>
+
     </Box>
   );
 }
