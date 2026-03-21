@@ -99,9 +99,9 @@ export default function Page() {
       </Grid><br />
       <Divider mb={10} />
 
-      {/* <Group  >
+      <Group  >
         <SignupButton />
-      </Group> */}
+      </Group>
 
       {/* Bottom */}
       <Flex

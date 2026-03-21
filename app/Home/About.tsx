@@ -2,7 +2,7 @@
 
 import { Box, Flex, Button, Text, Title, Group, Grid, Card, Image, Modal, TextInput, PasswordInput } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-// import SignupButton from "../singup/page";
+import SignupButton from "../singup/page";
 import { useEffect } from "react";
 export default function Page() {
   const [opened, { open, close }] = useDisclosure(false);
@@ -43,9 +43,9 @@ export default function Page() {
         <Button radius="xl" style={{ background: "#002fff" }}>
           Download
         </Button>
-        {/* <Group  >
+        <Group  >
           <SignupButton />
-        </Group> */}
+        </Group>
         {/* ///////////////////////////{{{  wele come model  }}}////////////////////////////////////////////////// */}
         <Modal
           opened={opened}
@@ -62,9 +62,9 @@ export default function Page() {
             Welcome to the future of voice technology. Now, you can control everything with your voice.
           </Text>
 
-          {/* <Group  >
+          <Group  >
             <SignupButton />
-          </Group> */}
+          </Group>
         </Modal>
         {/* ///////////////////////////{{{  wele come model  }}}////////////////////////////////////////////////// */}
       </Flex>
