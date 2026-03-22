@@ -4,6 +4,9 @@ import { Box, Flex, Button, Text, Title, Group, Grid, Card, Image, Modal, TextIn
 import { useDisclosure } from "@mantine/hooks";
 import SignupButton from "../singup/page";
 import { useEffect } from "react";
+import { CgProfile } from "react-icons/cg";
+import Link from "next/link";
+
 export default function Page() {
   const [opened, { open, close }] = useDisclosure(false);
 
@@ -46,6 +49,9 @@ export default function Page() {
         <Group  >
           <SignupButton />
         </Group>
+        <Link href="/Profile">
+  <CgProfile size={30} style={{ cursor: "pointer" }} />
+</Link>
         {/* ///////////////////////////{{{  wele come model  }}}////////////////////////////////////////////////// */}
         <Modal
           opened={opened}
@@ -111,8 +117,8 @@ export default function Page() {
 
         <Text
           mb={10}
-          c="black"
-          style={{ fontSize: "clamp(28px,5vw,45px)", fontWeight: 900 }}
+          c="white"
+          style={{ fontSize: "clamp(28px,5vw,45px)", fontWeight: 900,  }}
         >
           Powerful AI Features
         </Text>

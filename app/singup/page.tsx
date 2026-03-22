@@ -10,6 +10,7 @@ import {
 import { useDisclosure } from "@mantine/hooks";
 import { useState } from "react";
 import axios from "axios";
+
 export default function SignupButton() {
   const [opened, { open, close }] = useDisclosure(false);
 
@@ -26,10 +27,16 @@ export default function SignupButton() {
   };
 
   const handleSignup = async () => {
-    // if (!form.name || !form.email || !form.password || form.phone ||form.confirmPassword) {
-    //   alert("All fields required");
-    //   return;
-    // }
+    if (
+      !form.name ||
+      !form.email ||
+      !form.password ||
+      !form.phone ||
+      !form.confirmPassword
+    ) {
+      alert("All fields required");
+      return;
+    }
 
     if (form.password !== form.confirmPassword) {
       alert("Password not match");
@@ -37,32 +44,38 @@ export default function SignupButton() {
     }
 
     try {
-      const res = await axios.post("http://localhost:9799/users/signup", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
+      const res = await axios.post(
+        "http://localhost:9799/users/signup",
+        {
           name: form.name,
           email: form.email,
           password: form.password,
           phone: form.phone,
-          confirmPassword: form.confirmPassword,
-        }),
+        }
+      );
+
+      console.log("Signup success:", res.data);
+      alert("Signup successful ✅");
+      close();
+
+
+      setForm({
+        name: "",
+        email: "",
+        password: "",
+        confirmPassword: "",
+        phone: "",
       });
 
-
-      
-
-      close();
-    } catch (err) {
-      alert("Error signup");
+    } catch (err: any) {
+      console.log(err);
+      alert(err?.response?.data?.message || "Error signup ❌");
     }
   };
 
   return (
     <>
-      <Button radius="sl"   onClick={open}>
+      <Button radius="xl" onClick={open}>
         Signup
       </Button>
 
@@ -87,18 +100,17 @@ export default function SignupButton() {
           />
 
           <PasswordInput
-            label="ConfirmPassword"
+            label="Confirm Password"
             value={form.confirmPassword}
             onChange={(e) =>
               handleChange("confirmPassword", e.target.value)
             }
           />
+
           <TextInput
             label="Phone number"
             value={form.phone}
-            onChange={(e) =>
-              handleChange("phone", e.target.value)
-            }
+            onChange={(e) => handleChange("phone", e.target.value)}
           />
 
           <Button onClick={handleSignup}>Create Account</Button>
