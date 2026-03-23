@@ -111,9 +111,13 @@ export default function ProfilePage() {
                         </Text>
 
                         <Text size="sm" c="dimmed" fw={500}>
-                            VoiceMind AI is an intelligent voice assistant powered by advanced
-                            AI. Convert speech to text, automate tasks, and control
-                            applications using powerful voice commands.
+                            VoiceMind AI is a smart voice assistant built with advanced artificial intelligence.
+                            It allows users to easily convert speech into accurate text in real time.
+                            You can automate daily tasks and improve productivity using simple voice commands.
+                            The system helps in controlling applications without manual interaction.
+                            It is designed to be fast, efficient, and user-friendly for everyone.
+                            VoiceMind AI makes technology more accessible through the power of voice.
+
                         </Text>
 
                         <br />

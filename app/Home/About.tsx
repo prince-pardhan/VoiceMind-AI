@@ -50,9 +50,10 @@ export default function Page() {
           <SignupButton />
         </Group>
         <Link href="/Profile">
-  <CgProfile size={30} style={{ cursor: "pointer" }} />
-</Link>
+          <CgProfile size={30} style={{ cursor: "pointer" }} />
+        </Link>
         {/* ///////////////////////////{{{  wele come model  }}}////////////////////////////////////////////////// */}
+        
         <Modal
           opened={opened}
           onClose={close}
@@ -64,10 +65,27 @@ export default function Page() {
             Welcome to VoiceMind-AI
           </Title>
 
-          <Text mb={20} fw={800}>
-            Welcome to the future of voice technology. Now, you can control everything with your voice.
-          </Text>
-
+          <Card
+            radius="xl"
+            shadow="lg"
+            style={{
+              background: "rgba(0, 0, 0, 0.2)",
+              backdropFilter: "blur(18px)",
+              border: "1px solid rgba(255, 255, 255, 0.1)",
+              transition: "0.3s",
+            }}
+          >
+            <Text
+              mb={20}
+              fw={800}
+              style={{
+                color: "#000000",
+              }}
+            >
+              Welcome to the future of voice technology. Now, you can control everything with your voice.
+            </Text>
+          </Card>
+<br /> 
           <Group  >
             <SignupButton />
           </Group>
@@ -118,7 +136,7 @@ export default function Page() {
         <Text
           mb={10}
           c="white"
-          style={{ fontSize: "clamp(28px,5vw,45px)", fontWeight: 900,  }}
+          style={{ fontSize: "clamp(28px,5vw,45px)", fontWeight: 900, }}
         >
           Powerful AI Features
         </Text>
