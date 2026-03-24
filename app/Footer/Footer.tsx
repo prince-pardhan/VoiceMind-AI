@@ -1,7 +1,7 @@
 "use client";
 
-import { Box, Flex, Text, Title, Grid, Divider, Stack, Group } from "@mantine/core";
-import SignupButton from "../singup/page";
+import { Box, Flex, Text, Title, Grid, Divider, Stack, Group, Button } from "@mantine/core";
+
 export default function Page() {
   return (
     <Box
@@ -100,7 +100,14 @@ export default function Page() {
       <Divider mb={10} />
 
       <Group  >
-        <SignupButton />
+           <a href="https://docs.google.com/forms/d/1Oq_logQzfQLEk-8gLRKXHIIuHwljsfJmj8qLAE_0ASI/edit"> <Button radius="xl" style={{ background: "#002fff" }}>
+        singup
+      </Button></a>
+      <Button radius="xl" style={{ background: "#002fff" }}>
+        Download
+      </Button>
+       
+     
       </Group>
 
       {/* Bottom */}

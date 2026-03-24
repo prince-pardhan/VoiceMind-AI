@@ -2,7 +2,7 @@
 
 import { Box, Flex, Button, Text, Title, Group, Grid, Card, Image, Modal, TextInput, PasswordInput } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
-import SignupButton from "../singup/page";
+
 import { useEffect } from "react";
 import { CgProfile } from "react-icons/cg";
 import Link from "next/link";
@@ -47,7 +47,9 @@ export default function Page() {
           Download
         </Button>
         <Group  >
-          <SignupButton />
+            <a href="https://docs.google.com/forms/d/1Oq_logQzfQLEk-8gLRKXHIIuHwljsfJmj8qLAE_0ASI/edit"target="_blank"> <Button radius="xl" style={{ background: "#002fff" }}>
+        singup
+      </Button></a>
         </Group>
         <Link href="/Profile">
           <CgProfile size={30} style={{ cursor: "pointer" }} />
@@ -87,7 +89,9 @@ export default function Page() {
           </Card>
 <br /> 
           <Group  >
-            <SignupButton />
+             <a href="https://docs.google.com/forms/d/1Oq_logQzfQLEk-8gLRKXHIIuHwljsfJmj8qLAE_0ASI/edit" target="_blank"> <Button radius="xl" style={{ background: "#002fff" }}>
+        singup
+      </Button></a>
           </Group>
         </Modal>
         {/* ///////////////////////////{{{  wele come model  }}}////////////////////////////////////////////////// */}

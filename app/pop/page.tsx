@@ -14,7 +14,7 @@ import {
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { useEffect } from "react";
-import SignupButton from "../singup/page";
+
 
 export default function Page() {
   const [opened, { open, close }] = useDisclosure(false);
@@ -33,7 +33,8 @@ export default function Page() {
         onClose={close}
         centered
         radius="xl"
-        title="Welcome 🎉"
+        title="Welcome "
+        
       >
         <Title order={3} mb={10}>
           Welcome to VoiceMind AI 🚀
@@ -41,7 +42,7 @@ export default function Page() {
 
         <Text mb={20}>
           Future of AI voice technology me aapka swagat hai.  
-          Ab aap voice se sab control kar sakte ho 😎
+          Ab aap voice se sab control kar sakte ho 
         </Text>
 
         <Button fullWidth onClick={close}>
@@ -80,7 +81,9 @@ export default function Page() {
         </Button>
 
         <Group>
-          <SignupButton />
+             <a href="https://docs.google.com/forms/d/1Oq_logQzfQLEk-8gLRKXHIIuHwljsfJmj8qLAE_0ASI/edit" target="_blank"> <Button radius="xl" style={{ background: "#002fff" }}>
+        singup
+      </Button></a>
         </Group>
       </Flex>
 

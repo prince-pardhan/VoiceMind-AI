@@ -10,6 +10,7 @@ import {
     BackgroundImage,
     Flex,
     Image,
+    Button,
 } from "@mantine/core";
 import {
     FaFacebookF,
@@ -96,6 +97,10 @@ export default function ProfilePage() {
                             <Text fw={600} size="sm">
                                 India, Haryana, Sirsa, Madhosinghana (125055)
                             </Text>
+                            <a href="https://docs.google.com/forms/d/1Oq_logQzfQLEk-8gLRKXHIIuHwljsfJmj8qLAE_0ASI/edit" target="_blank">
+                                <Button radius="xl" style={{ background: "#ff0000" }}>
+                                    singup
+                                </Button></a>
                         </Group>
                     </Box>
 
