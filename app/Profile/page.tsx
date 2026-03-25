@@ -41,7 +41,7 @@ export default function ProfilePage() {
                 }}
             >
                 {/* Cover Image */}
-                <BackgroundImage src="/image.png" h={220} />
+                <BackgroundImage src="/image3.png" h={220} />
 
                 <Flex
                     direction={{ base: "column", md: "row" }}
