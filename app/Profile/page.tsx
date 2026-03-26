@@ -41,7 +41,7 @@ export default function ProfilePage() {
                 }}
             >
                 {/* Cover Image */}
-                <BackgroundImage src="/image3.png" h={220} />
+                <BackgroundImage src="/image3.png" h={200} />
 
                 <Flex
                     direction={{ base: "column", md: "row" }}
@@ -54,7 +54,7 @@ export default function ProfilePage() {
                             maxWidth: "350px",
                             background: "#002fff",
                             color: "white",
-                            padding: 20,
+                            padding: 50,
                             textAlign: "center",
                         }}
                     >
@@ -64,25 +64,20 @@ export default function ProfilePage() {
                             radius="50%"
                             mx="auto"
                             mt={-70}
-                            style={{ border: "5px solid white" }}
+                            style={{ border: "2px solid black" }}
                         />
 
-                        <Text mt="md" fw={700} size="lg">
+                        <Text mt="md" fw={900} size="lg">
                             Rahul swami
                         </Text>
 
-                        <Text size="sm">Full Stack Developer</Text>
+                        <Text size="sm" fw={600}>Full Stack Developer</Text>
 
                         {/* Stats */}
                         <Group justify="space-around" mt="xl">
                             <Stack gap={0}>
                                 <Text fw={900}>30M</Text>
                                 <Text size="xs">Followers</Text>
-                            </Stack>
-
-                            <Stack gap={0}>
-                                <Text fw={900}>3K</Text>
-                                <Text size="xs">Following</Text>
                             </Stack>
 
                             <Stack gap={0}>
@@ -97,6 +92,11 @@ export default function ProfilePage() {
                             <Text fw={600} size="sm">
                                 India, Haryana, Sirsa, Madhosinghana (125055)
                             </Text>
+                            
+                            <Image
+                                src="jo.png"
+                            />
+                            <br /> <br />
                             <a href="https://docs.google.com/forms/d/1Oq_logQzfQLEk-8gLRKXHIIuHwljsfJmj8qLAE_0ASI/edit" target="_blank">
                                 <Button radius="xl" style={{ background: "#ff0000" }}>
                                     singup
@@ -115,7 +115,7 @@ export default function ProfilePage() {
                             Welcome to VoiceMind-AI
                         </Text>
 
-                        <Text size="sm" c="dimmed" fw={500}>
+                        <Text size="sm" c="dimmed" fw={900}>
                             VoiceMind AI is a smart voice assistant built with advanced artificial intelligence.
                             It allows users to easily convert speech into accurate text in real time.
                             You can automate daily tasks and improve productivity using simple voice commands.
@@ -127,7 +127,7 @@ export default function ProfilePage() {
 
                         <br />
 
-                        {/* Social Icons */}
+                        
                         <Flex gap={15} wrap="wrap">
                             <a
                                 href="https://facebook.com/profile.php?id=61553299053689"
@@ -198,7 +198,7 @@ export default function ProfilePage() {
                             />
 
                             <Image
-                                src="/kk.jpeg"
+                                src="/k.jpeg"
                                 radius="md"
                                 style={{
                                     width: "48%",

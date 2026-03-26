@@ -12,6 +12,7 @@ export default function Page() {
         color: "white",
       }}
     >
+
       <Grid>
 
         {/* Brand */}
@@ -35,6 +36,8 @@ export default function Page() {
             control applications, automate tasks, and convert speech
             into accurate text using advanced artificial intelligence.
           </Text>
+
+          <Divider mb={10} />
           <Divider mb={10} />
         </Grid.Col>
 
@@ -100,14 +103,14 @@ export default function Page() {
       <Divider mb={10} />
 
       <Group  >
-           <a href="https://docs.google.com/forms/d/1Oq_logQzfQLEk-8gLRKXHIIuHwljsfJmj8qLAE_0ASI/edit"> <Button radius="xl" style={{ background: "#002fff" }}>
-        singup
-      </Button></a>
-      <Button radius="xl" style={{ background: "#002fff" }}>
-        Download
-      </Button>
-       
-     
+        <a href="https://docs.google.com/forms/d/1Oq_logQzfQLEk-8gLRKXHIIuHwljsfJmj8qLAE_0ASI/edit"> <Button radius="xl" style={{ background: "#002fff" }}>
+          singup
+        </Button></a>
+        <Button radius="xl" style={{ background: "#002fff" }}>
+          Download
+        </Button>
+
+
       </Group>
 
       {/* Bottom */}

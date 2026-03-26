@@ -37,7 +37,7 @@ export default function Page() {
         
       >
         <Title order={3} mb={10}>
-          Welcome to VoiceMind AI 🚀
+          Welcome to VoiceMind AI 
         </Title>
 
         <Text mb={20}>

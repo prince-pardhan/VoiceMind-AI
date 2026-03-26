@@ -145,8 +145,11 @@ export default function Page() {
           Powerful AI Features
         </Text>
       </Flex>
-
+<br />
       {/* Features */}
+        <Image
+              src="jo.png"
+              />
       <Box py={{ base: 60, md: 100 }} px={{ base: 20, md: 60 }}>
         <Grid>
           {[
@@ -174,8 +177,12 @@ export default function Page() {
               title: "Secure & Private",
               desc: "Your voice data stays protected and encrypted with advanced security.....?",
             },
+
+
+
           ].map((feature, i) => (
             <Grid.Col span={{ base: 12, sm: 6, md: 4 }} key={i}>
+            
               <Card
                 shadow="lg"
                 radius="xl"
