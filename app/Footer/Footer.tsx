@@ -5,11 +5,18 @@ import { Box, Flex, Text, Title, Grid, Divider, Stack, Group, Button } from "@ma
 export default function Page() {
   return (
     <Box
-      px={{ base: 20, md: 60 }}
+   px={{ base: 20, md: 60 }}
       py={{ base: 50, md: 70 }}
       style={{
-        background: "linear-gradient(135deg,#020617,#0f172a,#1e293b)",
+        position: "relative",
         color: "white",
+
+        // 🔥 BACKGROUND IMAGE
+        backgroundImage:
+          "url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        overflow: "hidden",
       }}
     >
 
@@ -20,8 +27,9 @@ export default function Page() {
           <Title
             order={3}
             mb={10}
+            c="blue"
             style={{
-              background: "linear-gradient(90deg,#6dd5ed,#a18cd1)",
+              
               WebkitBackgroundClip: "text",
               color: "transparent",
               fontWeight: 900,
@@ -31,7 +39,7 @@ export default function Page() {
             <Divider mb={10} fw={900} />
           </Title>
 
-          <Text size="sm" c="gray.4">
+          <Text size="xl" c="black" fw={900}>
             VoiceMind AI is a powerful voice assistant that helps users
             control applications, automate tasks, and convert speech
             into accurate text using advanced artificial intelligence.
@@ -42,33 +50,27 @@ export default function Page() {
         </Grid.Col>
 
         {/* Company */}
-        {/* <Grid.Col span={{ base: 6, sm: 3, md: 2 }}>
-          <Title order={5} mb={10}>Company</Title>
-
-          <Text size="sm" style={{ cursor: "pointer" }}>
-            Contact
-          </Text>
-        </Grid.Col> */}
+        
 
         {/* Social */}
         <Grid.Col span={{ base: 6, sm: 3, md: 2 }}>
           <Title order={6} mb={5} fw={900} c="blue">Follow</Title>
           <Divider mb={10} />
 
-          <Stack gap={8}>
-            <Text size="sm">
-              <a href="https://x.com/Rkswami001" target="_blank">Twitter</a>
+          <Stack gap={8} c="dark" >
+            <Text size="sm" fw={800}>
+              <a href="https://x.com/Rkswami001" target="_blank" >Twitter</a>
             </Text>
 
-            <Text size="sm">
+            <Text size="sm" fw={800}>
               <a href="https://www.linkedin.com/in/rk-swami-b63251379/" target="_blank">LinkedIn</a>
             </Text>
 
-            <Text size="sm">
+            <Text size="sm" fw={800}>
               <a href="https://github.com/prince-pardhan" target="_blank">GitHub</a>
             </Text>
 
-            <Text size="sm">
+            <Text size="sm" fw={800}>
               <a href="https://www.youtube.com/@RkWriter001" target="_blank">YouTube</a>
             </Text>
           </Stack>
@@ -80,17 +82,17 @@ export default function Page() {
           <Divider mb={10} />
 
           <Stack gap={8}>
-            <Text size="sm">
+            <Text size="sm" fw={700}c="dark">
               <a href="https://wa.me/918290400325" target="_blank">
                 WhatsApp
               </a>
             </Text>
-            <Text size="sm">
+            <Text size="sm" fw={700} c="dark">
               <a href="https://wa.me/917450800010" target="_blank">
                 WhatsApp=2
               </a>
             </Text>
-            <Text size="lg">
+            <Text size="lg" fw={700} c="dark">
               <a href="tel:+918290400325">Call</a>
             </Text>
 
@@ -103,7 +105,7 @@ export default function Page() {
       <Divider mb={10} />
 
       <Group  >
-        <a href="https://docs.google.com/forms/d/1Oq_logQzfQLEk-8gLRKXHIIuHwljsfJmj8qLAE_0ASI/edit"> <Button radius="xl" style={{ background: "#002fff" }}>
+        <a href="https://docs.google.com/forms/d/1Oq_logQzfQLEk-8gLRKXHIIuHwljsfJmj8qLAE_0ASI/edit" target="_blank"> <Button radius="xl" style={{ background: "#002fff" }}>
           singup
         </Button></a>
         <Button radius="xl" style={{ background: "#002fff" }}>
@@ -123,7 +125,7 @@ export default function Page() {
           paddingTop: "20px",
         }}
       >
-        <Text size="sm" c="gray.5">
+        <Text size="sm" c="black" fw={900}>
           © 2026 VoiceMind-AI
           <Divider mb={10} />
         </Text>
