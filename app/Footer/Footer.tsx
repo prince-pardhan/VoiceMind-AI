@@ -5,7 +5,7 @@ import { Box, Flex, Text, Title, Grid, Divider, Stack, Group, Button } from "@ma
 export default function Page() {
   return (
     <Box
-   px={{ base: 20, md: 60 }}
+      px={{ base: 20, md: 60 }}
       py={{ base: 50, md: 70 }}
       style={{
         position: "relative",
@@ -13,7 +13,7 @@ export default function Page() {
 
         // 🔥 BACKGROUND IMAGE
         backgroundImage:
-          "url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e')",
+          "url('https://img.freepik.com/free-photo/view-robot-human-businessperson_23-2150912089.jpg?semt=ais_hybrid&w=740&q=80')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         overflow: "hidden",
@@ -29,7 +29,7 @@ export default function Page() {
             mb={10}
             c="blue"
             style={{
-              
+
               WebkitBackgroundClip: "text",
               color: "transparent",
               fontWeight: 900,
@@ -50,7 +50,7 @@ export default function Page() {
         </Grid.Col>
 
         {/* Company */}
-        
+
 
         {/* Social */}
         <Grid.Col span={{ base: 6, sm: 3, md: 2 }}>
@@ -82,7 +82,7 @@ export default function Page() {
           <Divider mb={10} />
 
           <Stack gap={8}>
-            <Text size="sm" fw={700}c="dark">
+            <Text size="sm" fw={700} c="dark">
               <a href="https://wa.me/918290400325" target="_blank">
                 WhatsApp
               </a>

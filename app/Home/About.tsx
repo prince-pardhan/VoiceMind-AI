@@ -108,8 +108,7 @@ export default function Page() {
           padding: "40px 20px",
           background: `
       linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-      url('https://industrialcyber.co/wp-content/uploads/2026/01/2026.01.05-NIST-MITRE-invest-20-million-in-AI-centers-to-counter-cyberthreats-boost-US-manufacturing-competitiveness.webp')
-    `,
+       url('https://thumbs.dreamstime.com/b/human-hand-touching-robotic-finger-visible-sparks-connection-reaching-out-to-touch-creating-small-luminous-spark-317594948.jpg') `,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -117,12 +116,6 @@ export default function Page() {
           overflow: "hidden",
         }}
       >
-        <Image
-          src="https://thumbs.dreamstime.com/b/artificial-intelligence-ai-holographic-theme-technology-abstract-background-image-concept-wallpaper-334253471.jpg"
-          w={{ base: 260, sm: 320, md: 420 }}
-          radius="lg"
-          mb={30}
-        />
 
         <Title
           order={1}
@@ -157,7 +150,7 @@ export default function Page() {
         py={{ base: 60, md: 100 }}
         px={{ base: 20, md: 60 }}
         style={{
-          backgroundImage: "url('https://cdn.pixabay.com/photo/2023/02/13/16/14/ai-generated-7787717_1280.jpg')",
+          backgroundImage: "url('https://img.freepik.com/premium-photo/ai-generated-illustrution-robot-with-rising-graph_441362-10284.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -287,7 +280,7 @@ export default function Page() {
 
             // 🔥 BACKGROUND IMAGE
             backgroundImage:
-              "url('https://images.unsplash.com/photo-1531746790731-6c087fecd65a')",
+              "url('https://img.freepik.com/premium-photo/human-hand-touching-robotic-finger-with-visible-sparks-connection_1143476-6365.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
