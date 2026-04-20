@@ -1,7 +1,5 @@
 "use client";
-
 import { Box, Flex, Text, Title, Grid, Divider, Stack, Group, Button } from "@mantine/core";
-
 export default function Page() {
   return (
     <Box
@@ -11,7 +9,7 @@ export default function Page() {
         position: "relative",
         color: "white",
 
-        // 🔥 BACKGROUND IMAGE
+
         backgroundImage:
           "url('https://img.freepik.com/free-photo/view-robot-human-businessperson_23-2150912089.jpg?semt=ais_hybrid&w=740&q=80')",
         backgroundSize: "cover",
@@ -39,10 +37,10 @@ export default function Page() {
             <Divider mb={10} fw={900} />
           </Title>
 
-          <Text size="xl" c="black" fw={900}>
+          <Text size="xl" c="black" fw={900} bg="#0138ff3f">
             VoiceMind AI is a powerful voice assistant that helps users
             control applications, automate tasks, and convert speech
-            into accurate text using advanced artificial intelligence.
+            into accurate text using advanced artificial intelligence....?
           </Text>
 
           <Divider mb={10} />

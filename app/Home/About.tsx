@@ -71,15 +71,15 @@ export default function Page() {
             radius="xl"
             shadow="lg"
             style={{
-              background: "rgba(0, 0, 0, 0.2)",
+              background: "rgba(0, 0, 0, 0.21)",
               backdropFilter: "blur(18px)",
-              border: "1px solid rgba(255, 255, 255, 0.1)",
+              border: "5px solid rgb(0, 0, 0)",
               transition: "0.3s",
             }}
           >
             <Text
               mb={20}
-              fw={800}
+              fw={900}
               style={{
                 color: "#000000",
               }}
@@ -190,7 +190,7 @@ export default function Page() {
                 padding="xl"
                 style={{
                   textAlign: "center",
-                  background: "rgba(255, 255, 255, 0.31)", // glass effect better visible
+                  background: "rgba(255, 255, 255, 0.18)", // glass effect better visible
                   backdropFilter: "blur(12px)",
                   transition: "all 0.6s ease",
                   cursor: "pointer",
